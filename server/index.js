@@ -1,36 +1,47 @@
 // server.js
+const http=require ("http")
+const express=require ("express")
+const cors=require("cors")
+const socketIO=require("socket.io")
 
 
-// with Node js only
-// const http = require("http");
+const port =4000 || process.env.PORT
+const app=express()
+app.get('/',(req,res)=>{
+    res.send("ok working")
+})
 
-// const server = http.createServer((req, res) => {
+const server=http.createServer(app)
 
-//     res.writeHead(200, {'Content-Type': 'text/plain'});
+const io=socketIO(server)
+
+server.listen(port,()=>{
+    console.log(`running http  at http://localhost:${port}`)
+})
 
 
-//     if (req.url === '/') {
-//         res.end('Welcome to the homepage!');
-//     } else if (req.url === '/about') {
-//         res.end('About Us');
-//     } else if (req.url === '/contact') {
-//         res.end('Contact Us');
-//     } else {
-//         res.end('404 Not Found');
-//     }
+// const app=express();
+// const server=http.createServer(app)
+
+// app.get('/',(req,res)=>{
+//     res.status(200).json({message:"Happy"})
+// })
+// app.get('/home',(req,res)=>{
+//     res.status(200).json({message:"Home"})
+// })
+
+// app.listen(3000, () => {
+//     console.log("Server is listening at Port 8000");
 // });
 
-const express=require('express')
+// const eventEmitter=require('events');
+// const myEmitter=new eventEmitter();
 
-const app=express();
+// const eventListener=()=>{
+//     console.log("Event Occured")
+// }
+// myEmitter.on("taskEvent",eventListener)
 
-app.get('/',(req,res)=>{
-    res.status(200).json({message:"Happy"})
-})
-app.get('/home',(req,res)=>{
-    res.status(200).json({message:"Home"})
-})
+// myEmitter.emit('taskEvent')
 
-app.listen(3000, () => {
-    console.log("Server is listening at Port 8000");
-});
+// myEmitter.off('taskEvent',eventListener)
