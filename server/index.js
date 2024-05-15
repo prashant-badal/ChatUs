@@ -20,14 +20,16 @@ io.on('connection',(socket)=>{
 
 socket.on('joined',({user})=>{
     users[socket.id]=user;
-    console.log(`${user} is joined now! with`);
-    socket.broadcast.emit('userJoined', {user:'Admin',message:`Welcome ${users[socket.id]}` })
+    console.log(`${user} is joined now! `);
+    socket.broadcast.emit('userJoined', {user:'Admin :',message:` ${users[socket.id]} had joined` })
 
-
-socket.emit('welcome',{user:'Admin',message:"Welcome Hii"})
+    socket.emit('welcome',{user:'Admin',message:`Welcome to chat ${users[socket.id]}`})
 
 })
 
+socket.on("disconnect",()=>{
+    console.log(  "user is left")
+})
  
 
 
