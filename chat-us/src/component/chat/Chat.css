@@ -28,8 +28,10 @@
     transition: scale(1.3);
     cursor: pointer;
 }
-.header >h3{
-    margin:2.3vmax
+.header >h2{
+    font-size: 2vmax;
+    margin:2.5vmax;
+    color: antiquewhite;
 }
 .chatBox{
     height:70%

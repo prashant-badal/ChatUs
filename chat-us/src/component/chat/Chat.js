@@ -75,7 +75,7 @@ const Chat = () => {
     <div className='chatPage'>
       <div className='chatContainer'>
         <div className='header'>
-          <h3>Chat Uss</h3>
+          <h2>Chat Uss</h2>
         <a href='/'><img src={img} alt='closeIcon'/>
           </a>  
         </div>
@@ -86,7 +86,7 @@ const Chat = () => {
           
         </ReactScrollBottom>
         <div className='inputBox'>
-          <input id='chatInput' placeholder='Enter Your Emotions' type='text' />
+          <input onKeyPress={(e)=>e.key==='Enter'?send():null} id='chatInput' placeholder='Enter Your Emotions' type='text' />
           <button onClick={send} className='inputBtn'><img src={sendButton} alt='send' /></button>
         </div>
       </div>

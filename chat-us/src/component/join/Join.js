@@ -15,7 +15,7 @@ const Join = () => {
     <div className='JoinPage'>
         <div className='JoinContainer'>
             <img className='joinLogo' src={logo}/>
-            <h2>Chat Uss</h2>
+            <h1>Chat Uss</h1>
 
             <input placeholder='Enter the Room' id='joinInput' onChange={(e)=>setname(e.target.value)}/>
            <Link onClick={(e)=>!name ?e.preventDefault():null } to='/chat'> <buton className='joinButton' onClick={sendUser}>Login</buton></Link>

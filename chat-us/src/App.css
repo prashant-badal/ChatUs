@@ -3,3 +3,123 @@
     padding: 0;
        box-sizing: border-box;
 }
+
+@media (max-aspect-ratio :7/10 ) {
+
+    .JoinPage{
+
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+
+
+    .JoinContainer{
+  
+
+        width: 100%;
+        border: .5vmax solid rgb(247, 192, 192);
+    
+    }
+
+    .JoinContainer >img{
+  
+        width: 30vmax;
+        mix-blend-mode:black;
+    
+    }
+    .JoinContainer >h1{
+      
+      
+       font-size: 6vmax !important;
+       width:55vw;
+       text-align: center;
+       padding: 3vmax;
+      
+        border-bottom: .6vmax solid white;
+    
+    }
+    #joinInput{
+        width: 55vmax;
+        font-family: "Roboto", sans-serif;
+        padding: 4vmax;
+    font-size: 3vmax;
+     
+
+    }
+
+
+
+    .joinButton{
+        width: 52vmax;
+        font-size: 4vmax !important;
+        padding: 3.8vmax;
+        font-size: 2.5vmax;
+      
+       
+    }
+
+    .chatContainer{
+        background-color: antiquewhite;
+        width:100% !important;
+        height: 100% !important;
+        
+    }
+    .header{
+        background-color: crimson;
+        height: 10%;
+        
+    }
+    .header img{
+        margin:2.3vmax;
+        transform: scale(2);
+    
+    }
+    .header img:hover{
+        transition: scale(3.2)!important;
+       
+    }
+    .header >h2{
+        font-size:12vw !important;
+        margin:6vw
+    }
+    .chatBox{
+        height: 75% !important;
+    ;}
+    .inputBox{
+        border: 0.2vmax solid ;
+        height: 10%!important;
+        display: flex;
+    }
+
+    #chatInput{
+       
+        padding: 4vw !important;
+    background-color: aliceblue;
+    font-size: 4vw !important;
+    
+    }
+    
+    .messageBox{
+        background-color: gainsboro;
+        width: 70%!important;
+        padding: 2.5vw !important;
+        margin: 3vw !important;
+        border-radius:1.5vw !important;
+        font-size: 3.5vw;
+       
+    }
+    
+    .right{
+        float: right;
+        background-color: rgb(16, 134, 238);
+        color: white;
+    }
+    .left{
+        float: left;
+        background-color: rgb(180, 228, 35);
+        color: rgb(255, 253, 253);
+    }
+    
+   
+}

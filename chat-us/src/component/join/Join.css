@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    border: .5vmax solid white;
 
 }
 .JoinContainer >img{
@@ -23,7 +23,7 @@
     mix-blend-mode:black;
 
 }
-.JoinContainer >h2{
+.JoinContainer >h1{
   
    color: aliceblue;
    font-size: 3vmax;
@@ -43,15 +43,18 @@
 
 }
 .joinButton{
+    display: inline-block;
     width: 25vmax;
     font-family: "Roboto", sans-serif;
     color:rgb(243, 239, 236);
     font-size: 1.5vmax;
     background-color: rgb(252, 72, 7);
-    padding: 1.5vmax;
+    padding: 1vmax;
     font-size: 2vmax;
+    border-radius: 1vmax;
     text-align: center;
     cursor: pointer;
+    transition: all .2s;
    
 }
 a.joinButton{
