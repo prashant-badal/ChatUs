@@ -20,7 +20,6 @@ const Chat = () => {
   };
 
 
-
   console.log("render again")
 
   useEffect(() => {
