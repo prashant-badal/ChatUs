@@ -1,0 +1,82 @@
+.chatPage{
+    background-color: rgb(30, 27, 27);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chatContainer{
+    background-color: antiquewhite;
+    width:50%;
+    height: 50%;
+    border-radius: 5px;
+}
+.header{
+    background-color: crimson;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header img{
+    margin:2.3vmax;
+    border: 1px solid black;
+    transform: all .2s;
+
+}
+.header img:hover{
+ transform: scale(1.5);
+    cursor: pointer;
+}
+.header >h2{
+    font-size: 2vmax;
+    margin:2.5vmax;
+    color: antiquewhite;
+}
+.chatBox{
+    height:70%
+;}
+.inputBox{
+    border: 0.2vmax solid ;
+    height: 15%;
+    display: flex;
+}
+#chatInput{
+    border: none;
+    outline: none;
+  
+    width: 80%;
+    padding: 1vmax;
+background-color: aliceblue;
+font-size: 1.2vmax;
+border-top: .5px solid black;
+}
+
+.inputBtn{
+    padding: .8vmax;
+    width: 20%;
+ 
+    background-color: crimson;
+    color: aliceblue;
+    font-size: 1.2vmax;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    outline: none;
+}
+
+.inputBtn >img {
+    width: 2vmax;
+    filter: brightness(100) invert();
+}
+
+.inputBtn:hover{
+    cursor: pointer;
+    background-color: rgb(175, 37, 37);
+    transition: all .3s;
+}
+
+.inputBtn:hover >img {
+    transform: translateX(10px);
+    transition: all .3s;
+}
